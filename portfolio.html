@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <STYLE>
+        BODY {
+            background-color: rgb(15, 15, 46);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(9, 9, 66);
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li a {
+            margin: 0px 23px;
+            color: aquamarine;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .me {
+            margin: 0px 50px;
+            font-size: 1.5rem;
+
+        }
+
+        li a:hover {
+
+            color:rgb(96, 204, 18);
+            font-size: 1.03rem;
+            font-family: cursive;
+        }
+
+        .me:hover {
+            color: rgb(100, 151, 247);
+        }
+        .me{
+            color: aquamarine;
+        }
+        .me:active {
+            color: rgb(167, 105, 30);
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 60px 0px;
+
+        }
+
+        .section>div {
+            width: 40%;
+        }
+
+        .name {
+
+            margin: 69px 10px;
+            font-size: 2rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        .purple {
+            color: rgb(189, 100, 189);
+        }
+
+        .photo img {
+            width: 80%;
+        }
+
+        .photo img:hover {
+            transform: scale(1.03);
+        }
+
+        .logo:hover {
+            transform: scale(1.3);
+        }
+
+        #element {
+            font-size: 1.7rem;
+            color:goldenrod;
+        }
+
+        main hr {
+            background-color: rgb(34, 34, 49);
+            height: 0px;
+            margin: 0px 20px;
+        }
+
+        .secondsection {
+
+            margin: 30px 100px;
+            height: 75vh;
+        }
+
+        .secondsection h4 {
+
+            margin-top: 0;
+
+        }
+
+        .grey {
+            color: gray;
+            padding: 0px;
+            display: block;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            height: 2px;
+            width: 80vw;
+            margin: 66px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .secondsection .vertical {
+
+            background-color: aliceblue;
+            width: 1px;
+            height: 47px;
+            margin: 0px 20px;
+        }
+
+        .logo {
+            width: 37px;
+            position: relative;
+            top: -38px;
+            left: -18px;
+        }
+
+        .title {
+
+            color: rgb(188, 87, 87);
+            position: relative;
+            bottom: -20px;
+            left: -16px;
+            font-size: 14px;
+        }
+
+        .footer-container h3:hover{
+
+            color: aqua;
+        }
+
+        .desc {
+
+            position: relative;
+            bottom: -34px;
+            left: -50px;
+            width: 132px;
+            font-size: 9px;
+            color: rgb(82, 153, 153);
+        }
+
+        footer {
+            background-color: rgb(20, 15, 36);
+            color: white;
+            padding: 40px 80px;
+            margin-top: 50px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-container div {
+            width: 200px;
+            margin: 10px 0;
+        }
+
+        .footer-container h3 {
+            margin-bottom: 15px;
+            color: violet;
+        }
+
+        .footer-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-container ul li a {
+            text-decoration-line: none;
+            margin: 8px 0;
+            color:#fff;
+            cursor: pointer;
+        }
+
+        .footer-container ul li:hover {
+            color: rgb(200, 128, 255);
+            font-size: 1.2rem;
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid gray;
+            font-size: 14px;
+            color: rgb(180, 180, 180);
+        }
+
+        .buttons{
+            margin-top:90px;
+        }
+
+        .name .btn:hover{
+            background-color:#FFF;
+            color: black;
+            font-size: 1.2rem;
+        }
+        .name .btn:active{
+            background-color: rgb(55, 55, 20);
+        }
+        .name .btn {
+            margin: 20px 5px;
+            padding: 10px;
+            background-color: rgb(91, 42, 133);
+            border-radius: 8px;
+            font-size: 18px;
+            color: azure;
+            cursor: pointer;
+            text-decoration-line: none;
+        }
+    </STYLE>
+</head>
+
+<body>
+
+    <nav>
+        <div class="me">Janhavi Rajewar</div>
+        <div class="icons">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="section">
+
+            <div class="name"> Hi, My Name Is <span class="purple">Janhavi </span>
+                <div> And I'm a </div>
+                <span id="element"></span>
+
+                <div class="buttons">
+
+
+                    <a class="btn" href="./resume/JanhaviRajewar.pdf"> Download Resume</a>
+                    <a class="btn" href="https://github.com/Janhavirajewar" target="_blank">Visit GitHub</a>
+                    <a class="btn" href="https://www.linkedin.com/in/janhavirajewar/" target="_blank">Visit GitHub</a>
+
+                </div>
+            </div>
+
+            <div class="photo">
+                <img src="bg.png">
+
+            </div>
+        </div>
+
+        <hr>
+        <br><br>
+        <section class="secondsection">
+            <span class="grey">
+                That I Have Done
+            </span>
+            <h4>work experience</h4>
+
+            <div class="box">
+
+                <div class="vertical">
+                    <img class="logo" src="html.png">
+
+                    <div class="title">HTML DEVELOPER</div>
+                    <div class="desc">Built well-structured and semantic HTML5 pages to ensure accessibility, SEO
+                        optimization, and maintainability.
+
+                        Integrated multimedia elements (audio, video, images, iframes) for rich user experiences.
+
+
+
+                    </div>
+                </div>
+                <div class="vertical">
+
+                    <img class="logo" src="js.png" alt="notf">
+                    <div class="title">JS DEVELOPER </div>
+                    <div class="desc">Built interactive web applications with modern JavaScript (ES6+).
+
+                        Implemented DOM manipulation and event handling for dynamic user interfaces.
+
+                        Integrated APIs using Fetch/AJAX to load and display data asynchronously.
+
+
+
+                    </div>
+
+
+                </div>
+                <div class="vertical">
+
+                    <img class="logo" src="CSS.PNG" alt="notf">
+                    <div class="title">CSS DEVELOPER </div>
+                    <div class="desc">Designed responsive layouts using CSS Grid, Flexbox, and media queries.
+
+                        Styled web applications with custom themes, animations, and transitions for an engaging UI.
+
+                        Maintained cross-browser compatibility and mobile-first designs.
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="vertical">
+
+                    <img class="logo" src="java.png" alt="notf">
+                    <div class="title">JAVA DEVELOPER </div>
+                    <div class="desc">Designed and implemented object-oriented applications using Java with a strong
+                        focus on modularity and maintainability.
+
+                        Built multithreaded applications to optimize performance and improve scalability.
+                    </div>
+
+
+                </div>
+                <div class="vertical">
+
+                    <img class="logo" src="C++.PNG" alt="notf">
+                    <div class="title">C++ DEVELOPER </div>
+                    <div class="desc">Developed high-performance system-level applications in C++ with a focus on memory
+                        management and efficiency.
+
+                        Implemented data structures and algorithms to solve complex computational problems.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="first">
+                <h3>Janhavi's Portfolio</h3>
+                <p>Passionate Web & Software Developer creating interactive and modern web experiences.</p>
+            </div>
+
+            <div class="second">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="third">
+                <h3>Follow Me</h3>
+                <ul>
+                    <li><a class="btn" href="https://github.com/Janhavirajewar" target="_blank"> GitHub</a></li>
+                    <li><a class="btn" href="https://www.linkedin.com/in/janhavirajewar/" target="_blank"> Linkdin</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="fourth">
+                <h3>Contact</h3>
+                <p>Email: janhavi@example.com</p>
+                <p>Phone: +91-7020088544</p>
+            </div>
+        </div>
+
+        <div class="center">
+            © 2025 Janhavi's Portfolio | All rights reserved.
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Video Editor', 'Web Designer', 'Graphic Designer !'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
